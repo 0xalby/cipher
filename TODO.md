@@ -1,5 +1,8 @@
 # TODO
 * Writing a man page with pandoc
+* Substitution
+* Rail Fence
+* Base64
 ## Adding more ciphers
 * Affine
 * Playfair
