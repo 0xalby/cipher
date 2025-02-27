@@ -1,6 +1,6 @@
 package main
 
-import "cipher/cmd"
+import "github.com/0xalby/cipher/cmd"
 
 func main() {
 	cmd.Execute()

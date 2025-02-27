@@ -18,7 +18,7 @@ echo "Q2FnZSBUaGUgRWxlcGhhbnQ=" | cipher base64 -d
 ```zsh
 cipher -h
 ```
-```zsh
+```
 Encode and decode anything with a variety of popular ciphers with a mnemonic and constant command syntax
 
 Usage:
@@ -60,3 +60,6 @@ man cipher
 go install github.com/go-delve/delve/cmd/dlv@latest
 sudo pacman -Syu pandoc || sudo apt install pandoc
 ```
+
+## Contributing
+Check out [TODO.md](./TODO.md) and send a PR for me to review``

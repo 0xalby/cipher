@@ -1,4 +1,4 @@
-module cipher
+module github.com/0xalby/cipher
 
 go 1.24.0
 
