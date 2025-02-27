@@ -14,8 +14,8 @@ var (
 
 var railFenceCmd = &cobra.Command{
 	Use:   "railfence",
-	Short: "(En/de)code using the Rail Fence cipher",
-	Long:  `(En/de)code using the Rail Fence cipher with a mnemonic command syntax`,
+	Short: "Encode and decode using the Rail Fence cipher",
+	Long:  `Encode and decode using the Rail Fence cipher with a mnemonic command syntax`,
 	Run: func(cmd *cobra.Command, args []string) {
 		input, err := readInput(file)
 		if err != nil {
@@ -23,7 +23,7 @@ var railFenceCmd = &cobra.Command{
 			return
 		}
 		result := railFenceCipher(input, railFenceRails, railFenceDecode)
-		fmt.Print(result)
+		fmt.Println(result)
 	},
 	TraverseChildren: true,
 	Args:             cobra.NoArgs,

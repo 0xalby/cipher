@@ -16,12 +16,7 @@ func readInput(file string) (string, error) {
 		// Reading from stdin
 		scanner := bufio.NewScanner(os.Stdin)
 		for scanner.Scan() {
-			content := scanner.Text()
-			// Add a newline only if content doesn't end with one
-			if len(content) > 0 && content[len(content)-1] != '\n' {
-				input.WriteString(content + "\n")
-			}
-			input.WriteString(content)
+			input.WriteString(scanner.Text())
 		}
 		if err := scanner.Err(); err != nil {
 			return "", fmt.Errorf("error reading from stdin %s", err)

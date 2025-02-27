@@ -15,8 +15,8 @@ var (
 
 var substitutionCmd = &cobra.Command{
 	Use:   "substitution",
-	Short: "(En/de)code using the Substitution cipher",
-	Long:  `(En/de)code using the Substitution cipher with a mnemonic command syntax`,
+	Short: "Encode and decode using the Substitution cipher",
+	Long:  `Encode and decode using the Substitution cipher with a mnemonic command syntax`,
 	Run: func(cmd *cobra.Command, args []string) {
 		input, err := readInput(file)
 		if err != nil {
@@ -24,7 +24,7 @@ var substitutionCmd = &cobra.Command{
 			return
 		}
 		result := substitutionCipher(input, substitutionAlphabet, substitutionDecode)
-		fmt.Print(result)
+		fmt.Println(result)
 	},
 	TraverseChildren: true,
 	Args:             cobra.NoArgs,

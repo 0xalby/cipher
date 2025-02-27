@@ -13,8 +13,8 @@ var (
 
 var cipherCmd = &cobra.Command{
 	Use:   "cipher", // Use lowercase and replace with actual cipher name
-	Short: "(En/de)code using the CIPHER cipher",
-	Long:  `(En/de)code using the CIPHER cipher with a mnemonic command syntax`,
+	Short: "Encode and decode using the CIPHER cipher",
+	Long:  `Encode and decode using the CIPHER cipher with a mnemonic command syntax`,
 	Run: func(cmd *cobra.Command, args []string) {
 		input, err := readInput(file)
 		if err != nil {
@@ -23,7 +23,7 @@ var cipherCmd = &cobra.Command{
 		}
 		// Replace with actual cipher function, passing necessary parameters
 		result := cipherCipher(input)
-		fmt.Print(result)
+		fmt.Println(result)
 	},
 	Args: cobra.NoArgs, // Adjust based on whether positional args are needed
 }

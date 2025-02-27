@@ -15,8 +15,8 @@ var (
 
 var caesarCmd = &cobra.Command{
 	Use:   "caesar",
-	Short: "(En/de)code using the Caesar cipher",
-	Long:  `(En/de)code using the Caesar cipher with a mnemonic command syntax`,
+	Short: "Encode and decode using the Caesar cipher",
+	Long:  `Encode and decode using the Caesar cipher with a mnemonic command syntax`,
 	Run: func(cmd *cobra.Command, args []string) {
 		input, err := readInput(file)
 		if err != nil {
@@ -24,7 +24,7 @@ var caesarCmd = &cobra.Command{
 			return
 		}
 		result := caesarCipher(input, caesarShift, caesarDecode)
-		fmt.Print(result)
+		fmt.Println(result)
 	},
 	TraverseChildren: true,
 	Args:             cobra.NoArgs,

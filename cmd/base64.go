@@ -3,6 +3,7 @@ package cmd
 import (
 	"encoding/base64"
 	"fmt"
+	"strings"
 
 	"github.com/spf13/cobra"
 )
@@ -13,8 +14,8 @@ var (
 
 var base64Cmd = &cobra.Command{
 	Use:   "base64",
-	Short: "(En/de)code using Base64",
-	Long:  `(En/de)code input using Base64 with a mnemonic command syntax`,
+	Short: "Encode and decode using Base64",
+	Long:  `Encode and decode input using Base64 with a mnemonic command syntax`,
 	Run: func(cmd *cobra.Command, args []string) {
 		input, err := readInput(file)
 		if err != nil {
@@ -22,7 +23,7 @@ var base64Cmd = &cobra.Command{
 			return
 		}
 		result := base64Cipher(input, base64Decode)
-		fmt.Print(result)
+		fmt.Println(result)
 	},
 	TraverseChildren: true,
 	Args:             cobra.NoArgs,
@@ -35,6 +36,8 @@ func init() {
 
 // Base64 implementation
 func base64Cipher(input string, decode bool) string {
+	// Trim any trailing newline characters from the input
+	input = strings.TrimSpace(input)
 	if decode {
 		decoded, err := base64.StdEncoding.DecodeString(input)
 		if err != nil {

@@ -15,8 +15,8 @@ var (
 
 var vigenereCmd = &cobra.Command{
 	Use:   "vigenere",
-	Short: "(En/de)code using the Vigenère cipher",
-	Long:  `(En/de)code using the Vigenère cipher with a mnemonic command syntax`,
+	Short: "Encode and decode using the Vigenère cipher",
+	Long:  `Encode and decode using the Vigenère cipher with a mnemonic command syntax`,
 	Run: func(cmd *cobra.Command, args []string) {
 		input, err := readInput(file)
 		if err != nil {
@@ -24,7 +24,7 @@ var vigenereCmd = &cobra.Command{
 			return
 		}
 		result := vigenereCipher(input, vigenereKey, vigenereDecode)
-		fmt.Print(result)
+		fmt.Println(result)
 	},
 	TraverseChildren: true,
 	Args:             cobra.NoArgs,

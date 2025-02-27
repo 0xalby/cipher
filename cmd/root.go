@@ -10,8 +10,8 @@ var file string
 
 var rootCmd = &cobra.Command{
 	Use:   "cipher",
-	Short: "(En/de)code anything with a variety of ciphers",
-	Long:  `(En/de)code anything with a variety of popular ciphers with a mnemonic and constant command syntax`,
+	Short: "Encode and decode anything with a variety of ciphers",
+	Long:  `Encode and decode anything with a variety of popular ciphers with a mnemonic and constant command syntax`,
 }
 
 // This is called by main.main()
