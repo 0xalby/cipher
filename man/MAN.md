@@ -23,46 +23,6 @@ cipher - Encrypt and decrypt anything with a variety of ciphers
 
 # COMMANDS
 
-## caesar
-
-Encrypt and Decrypt using the Caesar cipher.
-
--s, --shift=*SHIFT*
-: Shift value for the Caesar cipher(required).
-
--d, --decrypt
-: Decrypt the input.
-
-## vigenere
-
-Encrypt and Decrypt using the Vigenère cipher.
-
--k, --key=*KEY*
-: Key for the Vigenère cipher (required).
-
--d, --decrypt
-: Decrypt the input.
-
-## substitution
-
-Encrypt and decrypt using the Substitution cipher.
-
--a, --alphabet=*ALPHABET*
-: Substitution alphabet(26 unique letters, required).
-
--d, --decrypt
-: Decrypt the input.
-
-## railfence
-
-Encrypt and decrypt using the Rail Fence cipher.
-
--r, --rails=*RAILS*
-: Number of rails for the Rail Fence cipher(required).
-
--d, --decrypt
-: Decrypt the input.
-
 ## aes
 
 Encrypt and decrypt using the AES cipher.
@@ -80,6 +40,46 @@ Encrypt and decrypt using the AES cipher.
 
 -b, --b=*KEY*
 : Key 'b' for the Affine cipher
+
+-d, --decrypt
+: Decrypt the input.
+
+## caesar
+
+Encrypt and Decrypt using the Caesar cipher.
+
+-s, --shift=*SHIFT*
+: Shift value for the Caesar cipher(required).
+
+-d, --decrypt
+: Decrypt the input.
+
+## railfence
+
+Encrypt and decrypt using the Rail Fence cipher.
+
+-r, --rails=*RAILS*
+: Number of rails for the Rail Fence cipher(required).
+
+-d, --decrypt
+: Decrypt the input.
+
+## substitution
+
+Encrypt and decrypt using the Substitution cipher.
+
+-a, --alphabet=*ALPHABET*
+: Substitution alphabet(26 unique letters, required).
+
+-d, --decrypt
+: Decrypt the input.
+
+## vigenere
+
+Encrypt and Decrypt using the Vigenère cipher.
+
+-k, --key=*KEY*
+: Key for the Vigenère cipher (required).
 
 -d, --decrypt
 : Decrypt the input.

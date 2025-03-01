@@ -19,38 +19,6 @@ If not provided, input can be read from stdin.
 \-h, \[en]help
 Display help information for the command.
 .SH COMMANDS
-.SS caesar
-Encrypt and Decrypt using the Caesar cipher.
-.TP
-\-s, \[en]shift=\f[I]SHIFT\f[R]
-Shift value for the Caesar cipher(required).
-.TP
-\-d, \[en]decrypt
-Decrypt the input.
-.SS vigenere
-Encrypt and Decrypt using the Vigenère cipher.
-.TP
-\-k, \[en]key=\f[I]KEY\f[R]
-Key for the Vigenère cipher (required).
-.TP
-\-d, \[en]decrypt
-Decrypt the input.
-.SS substitution
-Encrypt and decrypt using the Substitution cipher.
-.TP
-\-a, \[en]alphabet=\f[I]ALPHABET\f[R]
-Substitution alphabet(26 unique letters, required).
-.TP
-\-d, \[en]decrypt
-Decrypt the input.
-.SS railfence
-Encrypt and decrypt using the Rail Fence cipher.
-.TP
-\-r, \[en]rails=\f[I]RAILS\f[R]
-Number of rails for the Rail Fence cipher(required).
-.TP
-\-d, \[en]decrypt
-Decrypt the input.
 .SS aes
 Encrypt and decrypt using the AES cipher.
 .TP
@@ -66,6 +34,38 @@ Key `a' for the Affine cipher(must be coprime with 26 and defaults to 1)
 .TP
 \-b, \[en]b=\f[I]KEY\f[R]
 Key `b' for the Affine cipher
+.TP
+\-d, \[en]decrypt
+Decrypt the input.
+.SS caesar
+Encrypt and Decrypt using the Caesar cipher.
+.TP
+\-s, \[en]shift=\f[I]SHIFT\f[R]
+Shift value for the Caesar cipher(required).
+.TP
+\-d, \[en]decrypt
+Decrypt the input.
+.SS railfence
+Encrypt and decrypt using the Rail Fence cipher.
+.TP
+\-r, \[en]rails=\f[I]RAILS\f[R]
+Number of rails for the Rail Fence cipher(required).
+.TP
+\-d, \[en]decrypt
+Decrypt the input.
+.SS substitution
+Encrypt and decrypt using the Substitution cipher.
+.TP
+\-a, \[en]alphabet=\f[I]ALPHABET\f[R]
+Substitution alphabet(26 unique letters, required).
+.TP
+\-d, \[en]decrypt
+Decrypt the input.
+.SS vigenere
+Encrypt and Decrypt using the Vigenère cipher.
+.TP
+\-k, \[en]key=\f[I]KEY\f[R]
+Key for the Vigenère cipher (required).
 .TP
 \-d, \[en]decrypt
 Decrypt the input.

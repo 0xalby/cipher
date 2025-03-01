@@ -1,5 +1,4 @@
 # TODO
-* Writing a man page with pandoc
 ## Adding more ciphers
 * Playfair
 * One Time Pad
